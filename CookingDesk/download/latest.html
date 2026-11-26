@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Redirecting...</title>
+</head>
+<body>
+<div style="display:none;">
+<button id="btnMobile"></button>
+<button id="btnDesk"></button>
+<span id="infoText"></span>
+<h2 id="releaseVersion"></h2>
+<p id="releaseDate"></p>
+<a id="githubDownloadLink" href="#"></a>
+<a id="releaseNotesLink" href="#"></a>
+</div>
+<script src="script.js"></script>
+<script>
+const link = document.getElementById("releaseNotesLink");
+const observer = new MutationObserver(() => {
+    if (link.href && link.href !== window.location.href && !link.href.endsWith("#")) {
+        window.location.replace(link.href);
+    }
+});
+observer.observe(link, { attributes: true, attributeFilter: ["href"] });
+</script>
+</body>
+</html>

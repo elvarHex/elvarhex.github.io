@@ -1,0 +1,38 @@
+.guide-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.guide-header-section {
+    text-align: left;
+    width: 100%;
+}
+.guide-header-section h1 {
+    margin: 0 0 12px 0;
+}
+.guide-header-section p {
+    color: #555;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.5;
+}
+details.accordion-item {
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+summary.accordion-header {
+    padding: 20px 24px;
+    font-size: 20px;
+}
+.accordion-arrow {
+    width: 24px;
+    height: 24px;
+}
+.accordion-content {
+    padding: 0 24px 24px 24px;
+}
+.footer-content, .footer-bottom {
+    max-width: 800px;
+}

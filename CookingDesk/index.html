@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CookingDesk</title>
+<link rel="icon" type="image/svg" href="shared/logo.svg">
+<link rel="stylesheet" href="shared/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="status-bar">
+<div class="status-left">
+<img src="shared/logo.svg" class="logo">
+<span class="app-title">CookingDesk</span>
+</div>
+<button class="settings-btn" onclick="openMenu()">
+<img src="shared/menu.svg" class="icon">
+</button>
+</header>
+
+<div class="menu-overlay" id="overlay" onclick="closeMenu()"></div>
+
+<nav class="side-menu" id="menu">
+<button class="close-menu" onclick="closeMenu()">×</button>
+<div id="menuLinks"></div>
+</nav>
+
+<main>
+<section class="hero">
+<img src="shared/logo.svg" class="hero-logo">
+<h1>CookingDesk</h1>
+<p class="description">
+An app to improve your cooking, featuring recipe search,
+step-by-step guidance, and personal recipes stored in the cloud.
+Free and open-source.
+</p>
+<a href="download/" class="download">Download</a>
+</section>
+
+<section class="card">
+<h2>✨ Features</h2>
+<ul class="features">
+<li>📖 Discover new recipes</li>
+<li>👨‍🍳 Step-by-step cooking mode</li>
+<li>💾 Save your favorite recipes to the cloud with jsonbin.io.</li>
+<li>✍️ Create and customize your recipes using the simple editor: enter ingredients, quantities, and steps with just a few taps.</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>ℹ️ How to use it</h2>
+<p>Read the guide for first-time use.</p>
+<a href="guide/">Open user guide →</a>
+</section>
+
+<section class="card">
+<h2>❓ Frequently Asked Questions</h2>
+<div class="accordion">
+<details class="accordion-item">
+<summary class="accordion-header">
+Is CookingDesk free to use?
+<svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+</summary>
+<div class="accordion-content">
+<p>Yes, CookingDesk is 100% free and open-source. You can inspect the source code or contribute.</p>
+</div>
+</details>
+
+<details class="accordion-item">
+<summary class="accordion-header">
+How does cloud synchronization work?
+<svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+</summary>
+<div class="accordion-content">
+<p>CookingDesk uses jsonbin.io to securely store and sync your recipes across devices using your API key.</p>
+</div>
+</details>
+
+<details class="accordion-item">
+<summary class="accordion-header">
+Can I use CookingDesk on mobile devices and in the kitchen?
+<svg class="accordion-arrow" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+</summary>
+<div class="accordion-content">
+<p>Yes! The Mobile app is optimized for creating and discovering recipes on the go, while the Desk version offers a step-by-step cooking interface for when you are at the stove.</p>
+</div>
+</details>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="footer-content">
+<div class="footer-brand">
+<span>CookingDesk</span>
+<p>Open-source cooking app for Android devices.</p>
+</div>
+<div class="footer-links">
+<a href="/">Home</a>
+<a href="download/">Download</a>
+<a href="guide/">Guide</a>
+<a href="https://github.com/elvarHex/CookingDesk" target="_blank">GitHub</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 CookingDesk. Open source under the GNU GPL v3.0.</p>
+</div>
+</footer>
+<script>const BASE_URL = "";</script>
+<script src="shared/app.js"></script>
+</body>
+</html>

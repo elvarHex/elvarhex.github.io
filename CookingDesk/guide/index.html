@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guide · CookingDesk</title>
+<link rel="icon" type="image/svg" href="../shared/logo.svg">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="stylesheet" href="../shared/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="status-bar">
+<a href="../" class="status-left">
+<img src="../shared/logo.svg" class="logo">
+<span class="app-title">CookingDesk</span>
+</a>
+<button class="settings-btn" onclick="openMenu()">
+<img src="../shared/menu.svg" class="icon">
+</button>
+</header>
+
+<div class="menu-overlay" id="overlay" onclick="closeMenu()"></div>
+
+<nav class="side-menu" id="menu">
+<button class="close-menu" onclick="closeMenu()">×</button>
+<div id="menuLinks"></div>
+</nav>
+
+<main>
+<div class="guide-container">
+<div class="guide-header-section">
+<h1>Guide</h1>
+<p>Is this your first time using it, or are you having a problem? You've come to the right place!</p>
+</div>
+<input type="text" id="searchInput" class="search-input" placeholder="Search guides...">
+<div class="accordion" id="guidesAccordion"></div>
+</div>
+</main>
+
+<footer>
+<div class="footer-content">
+<div class="footer-brand">
+<span>CookingDesk</span>
+<p>Open-source cooking app for Android devices.</p>
+</div>
+<div class="footer-links">
+<a href="../">Home</a>
+<a href="../download/">Download</a>
+<a href="../guide/">Guide</a>
+<a href="https://github.com/elvarhex/CookingDesk" target="_blank">GitHub</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 CookingDesk. Open source under the GNU GPL v3.0.</p>
+</div>
+</footer>
+
+<script>const BASE_URL = "../";</script>
+<script src="../shared/app.js"></script>
+<script src="guide.js"></script>
+</body>
+</html>

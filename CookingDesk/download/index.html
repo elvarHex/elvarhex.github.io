@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download · CookingDesk</title>
+<link rel="icon" type="image/svg" href="../shared/logo.svg">
+<link rel="stylesheet" href="../shared/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="status-bar">
+<a href="../" class="status-left">
+<img src="../shared/logo.svg" class="logo">
+<span class="app-title">CookingDesk</span>
+</a>
+<button class="settings-btn" onclick="openMenu()">
+<img src="../shared/menu.svg" class="icon">
+</button>
+</header>
+
+<div class="menu-overlay" id="overlay" onclick="closeMenu()"></div>
+
+<nav class="side-menu" id="menu">
+<button class="close-menu" onclick="closeMenu()">×</button>
+<div id="menuLinks"></div>
+</nav>
+
+<main>
+<section class="hero">
+<h1>Download</h1>
+<div class="version-buttons">
+<button class="version-btn active" id="btnMobile" onclick="selectVersion('mobile')">Mobile version</button>
+<button class="version-btn" id="btnDesk" onclick="selectVersion('desk')">Desk version</button>
+</div>
+
+<div class="info-box">
+<div class="info-icon">i</div>
+<p class="info-text" id="infoText">Use the mobile version to discover recipes and create your own.</p>
+</div>
+</section>
+
+<section class="card" id="versionCard">
+<div class="release-header">
+<img src="../shared/logo.svg" class="release-logo">
+<div class="release-info">
+<h2 id="releaseVersion">Loading...</h2>
+<p class="release-date" id="releaseDate">Checking latest release date...</p>
+</div>
+</div>
+<p>Download the latest version by clicking here.</p>
+<a href="#" id="githubDownloadLink" class="github-btn-link">
+<img src="../shared/getitongithub.png" class="github-btn-img" alt="Get it on GitHub">
+</a>
+<br>
+<a href="#" id="releaseNotesLink" class="release-notes-link">Open release notes →</a>
+</section>
+</main>
+
+<footer>
+<div class="footer-content">
+<div class="footer-brand">
+<span>CookingDesk</span>
+<p>Open-source cooking app for Android devices.</p>
+</div>
+<div class="footer-links">
+<a href="../">Home</a>
+<a href="../download/">Download</a>
+<a href="../guide/">Guide</a>
+<a href="https://github.com/elvarHex/CookingDesk" target="_blank">GitHub</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 CookingDesk. Open source under the GNU GPL v3.0.</p>
+</div>
+</footer>
+
+<script>const BASE_URL = "../";</script>
+<script src="../shared/app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
